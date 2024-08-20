@@ -2,6 +2,15 @@
 import java.util.*;
 public class CollectionsPractice {
 
+//    variabele argument concepts practice (varibale ARGS....)
+    public static int addMyNumbers(int x,int y, int ...args){
+        int sum=x+y;
+        for(int i=0;i< args.length;i++){
+            sum=sum+args[i];
+        }
+        return sum;
+    }
+
 
     public static void main(String []args){
         List <Integer> Name= new ArrayList<Integer>();
@@ -17,14 +26,15 @@ public class CollectionsPractice {
 //        Name.remove(1);
         Iterator<Integer> it= Aset.iterator();
 
-   while(it.hasNext()){
-       int value=it.next();
+//   while(it.hasNext()){
+//       int value=it.next();
 //       if(value%2==0) {
 //           it.remove();
 //       }
 //       else{}
-       System.out.println(value);
-   }
+//       System.out.println(value);
+//   }
 
+//        System.out.println(addMyNumbers(2,3,4,5,6,67,7));
     }
 }
